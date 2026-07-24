@@ -1,13 +1,13 @@
-# 提供了 timestamp、username 变量，用于初始化数据时填充时间戳和用户名
-# 初始化文章关联的分类、标签数据
+# 提供了 timestamp、username 變數，用於初始化資料時填充時間戳記和使用者名稱
+# 初始化文章關聯的分類、標籤資料
 apiVersion: content.halo.run/v1alpha1
 kind: Category
 metadata:
   name: 76514a40-6ef1-4ed9-b58a-e26945bde3ca
 spec:
-  displayName: 默认分类
+  displayName: 預設分類
   slug: default
-  description: 这是你的默认分类，如不需要，删除即可。
+  description: 這是您的預設分類，若不需要，刪除即可。
   cover: ""
   template: ""
   priority: 0
@@ -28,7 +28,7 @@ status:
   permalink: "/tags/halo"
 
 ---
-# 文章关联的内容
+# 文章關聯的內容
 apiVersion: content.halo.run/v1alpha1
 kind: Snapshot
 metadata:
@@ -43,42 +43,42 @@ spec:
     name: 5152aea5-c2e8-4717-8bba-2263d46e19d5
   rawType: HTML
   rawPatch: <h2 id="hello-halo"><strong>Hello
-    Halo</strong></h2><p>如果你看到了这一篇文章，那么证明你已经安装成功了，感谢使用 <a target="_blank"
+    Halo</strong></h2><p>如果您看到了這一篇文章，那麼證明您已經安裝成功了，感謝使用 <a target="_blank"
     rel="noopener noreferrer nofollow" href="https://www.halo.run/">Halo</a>
-    进行创作，希望能够使用愉快。</p><h2
-    id="%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5"><strong>相关链接</strong></h2><ul><li><p>官网：<a
+    進行創作，希望能夠使用愉快。</p><h2
+    id="%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5"><strong>相關連結</strong></h2><ul><li><p>官網：<a
     target="_blank" rel="noopener noreferrer nofollow"
-    href="https://www.halo.run">https://www.halo.run</a></p></li><li><p>文档：<a
+    href="https://www.halo.run">https://www.halo.run</a></p></li><li><p>文件：<a
     target="_blank" rel="noopener noreferrer nofollow"
-    href="https://docs.halo.run">https://docs.halo.run</a></p></li><li><p>社区：<a
+    href="https://docs.halo.run">https://docs.halo.run</a></p></li><li><p>社群：<a
     target="_blank" rel="noopener noreferrer nofollow"
-    href="https://bbs.halo.run">https://bbs.halo.run</a></p></li><li><p>应用市场：<a
+    href="https://bbs.halo.run">https://bbs.halo.run</a></p></li><li><p>應用程式市場：<a
     target="_blank" rel="noopener noreferrer nofollow"
-    href="https://www.halo.run/store/apps">https://www.halo.run/store/apps</a></p></li><li><p>开源地址：<a
+    href="https://www.halo.run/store/apps">https://www.halo.run/store/apps</a></p></li><li><p>開源網址：<a
     target="_blank" rel="noopener noreferrer nofollow"
-    href="https://github.com/halo-dev/halo">https://github.com/halo-dev/halo</a></p></li></ul><p>在使用过程中，有任何问题都可以通过以上链接找寻答案，或者联系我们。</p><blockquote><p>这是一篇自动生成的文章，请删除这篇文章之后开始你的创作吧！</p></blockquote>
+    href="https://github.com/halo-dev/halo">https://github.com/halo-dev/halo</a></p></li></ul><p>在使用過程中，有任何問題都可以透過以上連結找尋答案，或者聯繫我們。</p><blockquote><p>這是一篇自動產生的文章，請刪除這篇文章之後開始您的創作吧！</p></blockquote>
   contentPatch: <h2 id="hello-halo"><strong>Hello
-    Halo</strong></h2><p>如果你看到了这一篇文章，那么证明你已经安装成功了，感谢使用 <a target="_blank"
+    Halo</strong></h2><p>如果您看到了這一篇文章，那麼證明您已經安裝成功了，感謝使用 <a target="_blank"
     rel="noopener noreferrer nofollow" href="https://www.halo.run/">Halo</a>
-    进行创作，希望能够使用愉快。</p><h2
-    id="%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5"><strong>相关链接</strong></h2><ul><li><p>官网：<a
+    進行創作，希望能夠使用愉快。</p><h2
+    id="%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5"><strong>相關連結</strong></h2><ul><li><p>官網：<a
     target="_blank" rel="noopener noreferrer nofollow"
-    href="https://www.halo.run">https://www.halo.run</a></p></li><li><p>文档：<a
+    href="https://www.halo.run">https://www.halo.run</a></p></li><li><p>文件：<a
     target="_blank" rel="noopener noreferrer nofollow"
-    href="https://docs.halo.run">https://docs.halo.run</a></p></li><li><p>社区：<a
+    href="https://docs.halo.run">https://docs.halo.run</a></p></li><li><p>社群：<a
     target="_blank" rel="noopener noreferrer nofollow"
-    href="https://bbs.halo.run">https://bbs.halo.run</a></p></li><li><p>应用市场：<a
+    href="https://bbs.halo.run">https://bbs.halo.run</a></p></li><li><p>應用程式市場：<a
     target="_blank" rel="noopener noreferrer nofollow"
-    href="https://www.halo.run/store/apps">https://www.halo.run/store/apps</a></p></li><li><p>开源地址：<a
+    href="https://www.halo.run/store/apps">https://www.halo.run/store/apps</a></p></li><li><p>開源網址：<a
     target="_blank" rel="noopener noreferrer nofollow"
-    href="https://github.com/halo-dev/halo">https://github.com/halo-dev/halo</a></p></li></ul><p>在使用过程中，有任何问题都可以通过以上链接找寻答案，或者联系我们。</p><blockquote><p>这是一篇自动生成的文章，请删除这篇文章之后开始你的创作吧！</p></blockquote>
+    href="https://github.com/halo-dev/halo">https://github.com/halo-dev/halo</a></p></li></ul><p>在使用過程中，有任何問題都可以透過以上連結找尋答案，或者聯繫我們。</p><blockquote><p>這是一篇自動產生的文章，請刪除這篇文章之後開始您的創作吧！</p></blockquote>
   lastModifyTime: "${timestamp}"
   owner: "${username}"
   contributors:
     - "${username}"
 
 ---
-# 初始化文章数据
+# 初始化文章資料
 apiVersion: content.halo.run/v1alpha1
 kind: Post
 metadata:
@@ -101,7 +101,7 @@ spec:
   priority: 0
   excerpt:
     autoGenerate: false
-    raw: 如果你看到了这一篇文章，那么证明你已经安装成功了，感谢使用 Halo 进行创作，希望能够使用愉快。
+    raw: 如果您看到了這一篇文章，那麼證明您已經安裝成功了，感謝使用 Halo 進行創作，希望能夠使用愉快。
   categories:
     - 76514a40-6ef1-4ed9-b58a-e26945bde3ca
   tags:
@@ -111,7 +111,7 @@ status:
   permalink: /archives/hello-halo
 
 ---
-# 自定义页面关联的内容
+# 自訂頁面關聯的內容
 apiVersion: content.halo.run/v1alpha1
 kind: Snapshot
 metadata:
@@ -125,27 +125,25 @@ spec:
     kind: SinglePage
     name: 373a5f79-f44f-441a-9df1-85a4f553ece8
   rawType: HTML
-  rawPatch:
-    <h2><strong>关于页面</strong></h2><p>这是一个自定义页面，你可以在后台的 <code>页面</code>
-    -&gt; <code>自定义页面</code>
-    找到它，你可以用于新建关于页面、联系我们页面等等。</p><blockquote><p>这是一篇自动生成的页面，你可以在后台删除它。</p></blockquote>
-  contentPatch:
-    <h2><strong>关于页面</strong></h2><p>这是一个自定义页面，你可以在后台的 <code>页面</code>
-    -&gt; <code>自定义页面</code>
-    找到它，你可以用于新建关于页面、联系我们页面等等。</p><blockquote><p>这是一篇自动生成的页面，你可以在后台删除它。</p></blockquote>
+  rawPatch: <h2><strong>關於頁面</strong></h2><p>這是一個自訂頁面，您可以在後台的 <code>頁面</code>
+    -&gt; <code>自訂頁面</code>
+    找到它，您可以用於新建關於頁面、聯絡我們頁面等等。</p><blockquote><p>這是一個自動產生的頁面，您可以在後台刪除它。</p></blockquote>
+  contentPatch: <h2><strong>關於頁面</strong></h2><p>這是一個自訂頁面，您可以在後台的 <code>頁面</code>
+    -&gt; <code>自訂頁面</code>
+    找到它，您可以用於新建關於頁面、聯絡我們頁面等等。</p><blockquote><p>這是一個自動產生的頁面，您可以在後台刪除它。</p></blockquote>
   lastModifyTime: "${timestamp}"
   owner: "${username}"
   contributors:
     - "${username}"
 
 ---
-# 初始化自定义页面数据
+# 初始化自訂頁面資料
 apiVersion: content.halo.run/v1alpha1
 kind: SinglePage
 metadata:
   name: 373a5f79-f44f-441a-9df1-85a4f553ece8
 spec:
-  title: 关于
+  title: 關於
   slug: about
   template: ""
   cover: ""
@@ -162,25 +160,25 @@ spec:
   priority: 0
   excerpt:
     autoGenerate: false
-    raw: 这是一个自定义页面，你可以在后台的 页面 -> 自定义页面 找到它，你可以用于新建关于页面、联系我们页面等等。
-  htmlMetas: []
+    raw: 這是一個自訂頁面，您可以在後台的 頁面 -> 自訂頁面 找到它，您可以用於新建關於頁面、聯絡我們頁面等等。
+  htmlMetas: [ ]
 status:
   permalink: "/about"
 
 ---
-# 首页菜单项
+# 首頁選單項目
 apiVersion: v1alpha1
 kind: MenuItem
 metadata:
   name: 88c3f10b-321c-4092-86a8-70db00251b74
 spec:
-  displayName: 首页
+  displayName: 首頁
   href: /
   menuName: primary
   children: []
   priority: 0
 ---
-# 文章归档
+# 關聯到文章作為選單
 apiVersion: v1alpha1
 kind: MenuItem
 metadata:
@@ -192,7 +190,7 @@ spec:
   children: []
   priority: 1
 ---
-# 关联到分类作为菜单
+# 關聯到標籤作為選單
 apiVersion: v1alpha1
 kind: MenuItem
 metadata:
@@ -209,13 +207,13 @@ spec:
     kind: Category
     name: 76514a40-6ef1-4ed9-b58a-e26945bde3ca
 ---
-# 关联到自定义页面作为菜单
+# 關聯到自訂頁面作為選單
 apiVersion: v1alpha1
 kind: MenuItem
 metadata:
   name: b0d041fa-dc99-48f6-a193-8604003379cf
 spec:
-  displayName: "关于"
+  displayName: "關於"
   href: "/about"
   menuName: primary
   children: []
@@ -333,7 +331,7 @@ kind: Menu
 metadata:
   name: primary
 spec:
-  displayName: 主菜单
+  displayName: 主選單
   menuItems:
     - 88c3f10b-321c-4092-86a8-70db00251b74
     - c4c814d1-0c2c-456b-8c96-4864965fee94

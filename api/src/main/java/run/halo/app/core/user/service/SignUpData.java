@@ -61,8 +61,8 @@ public class SignUpData {
         Class<? extends Payload>[] payload() default {};
     }
 
-    private static class SignUpDataConstraintValidator
-            implements ConstraintValidator<SignUpDataConstraint, SignUpData> {
+    public static class SignUpDataConstraintValidator
+        implements ConstraintValidator<SignUpDataConstraint, SignUpData> {
 
         @Override
         public boolean isValid(SignUpData signUpData, ConstraintValidatorContext context) {

@@ -3,9 +3,9 @@ kind: NotifierDescriptor
 metadata:
   name: default-email-notifier
 spec:
-  displayName: "邮件通知"
-  description: "通过邮件将通知发送给用户"
-  notifierExtName: "halo-email-notifier"
+  displayName: '郵件通知'
+  description: '透過郵件將通知發送給使用者'
+  notifierExtName: 'halo-email-notifier'
   senderSettingRef:
     name: "notifier-setting-for-email"
     group: "sender"
@@ -17,39 +17,39 @@ metadata:
 spec:
   forms:
     - group: sender
-      label: 发件设置
+      label: 發信設定
       formSchema:
         - $formkit: checkbox
-          label: "启用邮件通知器"
+          label: "啟用郵件通知器"
           value: false
           name: enable
         - $formkit: verificationForm
           if: "$enable"
           action: /apis/console.api.notification.halo.run/v1alpha1/notifiers/default-email-notifier/verify-connection
-          label: 测试邮箱
+          label: 測試信箱
           children:
             - $formkit: text
-              label: "用户名"
+              label: "使用者名稱"
               name: username
               validation: required
             - $formkit: text
               if: "$enable"
-              label: "发信地址"
+              label: "發信地址"
               name: "sender"
-              help: "如果用户名为实际发信地址，可忽略"
+              help: "如果使用者名稱為實際發信地址，可忽略"
             - $formkit: password
-              label: "密码"
+              label: "密碼"
               name: password
               validation: required
             - $formkit: text
-              label: "显示名称"
+              label: "顯示名稱"
               name: displayName
             - $formkit: text
-              label: "SMTP 服务器地址"
+              label: "SMTP 伺服器位址"
               name: host
               validation: required
             - $formkit: text
-              label: "端口号"
+              label: "連接埠"
               name: port
               validation: required
             - $formkit: select
@@ -72,8 +72,8 @@ metadata:
     rbac.authorization.halo.run/ui-permissions: |
       [ "uc:posts:publish" ]
 spec:
-  displayName: "我的文章收到新评论"
-  description: "如果有读者在你的文章下方留下了新的评论，你将会收到一条通知，告诉你有新的评论。这个通知事件可以帮助你及时了解读者对你的文章的反馈，以便你更好地与读者互动，提高文章的质量和受欢迎程度。"
+  displayName: "我的文章收到新評論"
+  description: "如果有讀者在你的文章下方留下了新的評論，你將會收到一條通知。這個通知事件可以幫助你及時了解讀者對文章的意見，以便更好地與讀者互動，提高文章品質與受歡迎程度。"
   properties:
     - name: postName
       type: string
@@ -107,8 +107,8 @@ metadata:
     rbac.authorization.halo.run/ui-permissions: |
       [ "system:singlepages:manage" ]
 spec:
-  displayName: "我的自定义页面收到新评论"
-  description: "当你创建的自定义页面收到新评论时，你将会收到一条通知，告诉你有新的评论。"
+  displayName: "我的自定義頁面收到新評論"
+  description: "當你建立的自定義頁面收到新評論時，你將會收到一條通知。"
   properties:
     - name: pageName
       type: string
@@ -139,8 +139,8 @@ kind: ReasonType
 metadata:
   name: someone-replied-to-you
 spec:
-  displayName: "有人回复了我"
-  description: "如果有其他用户回复了你的评论，你将会收到一条通知，告诉你有人回复了你。"
+  displayName: "有人回覆了我"
+  description: "如果有其他使用者回覆了你的評論，你將會收到一條通知。"
   properties:
     - name: commentName
       type: string
@@ -184,8 +184,8 @@ metadata:
   labels:
     halo.run/hidden: "true"
 spec:
-  displayName: "邮箱验证"
-  description: "当你的邮箱被用于注册账户时，会收到一条带有验证码的邮件，你需要点击邮件中的链接来验证邮箱是否属于你。"
+  displayName: "信箱驗證"
+  description: "當你的信箱被用於註冊帳戶時，會收到一條帶有驗證碼的郵件，你需要點擊郵件中的連結來驗證信箱是否屬於你。"
   properties:
     - name: username
       type: string
@@ -204,8 +204,8 @@ metadata:
   labels:
     halo.run/hidden: "true"
 spec:
-  displayName: "根据邮件地址重置密码"
-  description: "当你通过邮件地址找回密码时，会收到一条带密码重置链接的邮件，你需要点击邮件中的链接来重置密码。"
+  displayName: "透過郵件地址重設密碼"
+  description: "當你透過郵件地址找回密碼時，會收到一條帶有密碼重設連結的郵件，你需要點擊郵件中的連結來重設密碼。"
   properties:
     - name: username
       type: string
@@ -222,8 +222,8 @@ kind: ReasonType
 metadata:
   name: new-device-login
 spec:
-  displayName: "新设备登录"
-  description: "当你的账户在新设备上登录时，你会收到一条通知，告诉你有新设备登录了你的账户。"
+  displayName: "新裝置登入"
+  description: "當你的帳戶在新的裝置上登入時，你會收到一條通知。"
   properties:
     - name: os
       type: string

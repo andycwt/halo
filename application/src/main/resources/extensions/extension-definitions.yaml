@@ -1,5 +1,29 @@
-## TODO: Currently, Halo does not support i18n for configuration file descriptions
-## So Simplified Chinese is temporarily used as the default description language.
+## TODO: 目前 Halo 尚不支援配置檔案描述的多語言 (i18n)
+## 因此暫時將正體中文作為預設描述語言。
+
+apiVersion: plugin.halo.run/v1alpha1
+kind: ExtensionDefinition
+metadata:
+  name: username-password-logout-handler
+  labels:
+    auth.halo.run/extension-point-name: "additional-webfilter"
+spec:
+  className: run.halo.app.security.authentication.login.UsernamePasswordLogoutHandler
+  extensionPointName: additional-webfilter
+  displayName: "使用者名稱密碼登出處理器"
+  description: "用於使用者名稱和密碼認證的登出處理器"
+---
+apiVersion: plugin.halo.run/v1alpha1
+kind: ExtensionDefinition
+metadata:
+  name: delegating-logout-page-generating-webfilter
+  labels:
+    auth.halo.run/extension-point-name: "additional-webfilter"
+spec:
+  className: run.halo.app.security.authentication.login.DelegatingLogoutPageGeneratingWebFilter
+  extensionPointName: additional-webfilter
+  displayName: "登出頁面生成篩選器"
+  description: "用於生成預設的登出頁面"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -9,8 +33,8 @@ metadata:
 spec:
   className: run.halo.app.notification.EmailNotifier
   extensionPointName: reactive-notifier
-  displayName: "邮件通知器"
-  description: "支持通过电子邮件向用户发送通知"
+  displayName: "郵件通知器"
+  description: "支援透過電子郵件向使用者發送通知"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -20,8 +44,8 @@ metadata:
 spec:
   className: run.halo.app.search.lucene.LuceneSearchEngine
   extensionPointName: search-engine
-  displayName: "Lucene 搜索引擎"
-  description: "Halo 自带的本地搜索引擎"
+  displayName: "Lucene 搜尋引擎"
+  description: "Halo 內建的本地搜尋引擎"
   icon: /images/extension-points/lucene.png
 
 ---
@@ -204,9 +228,8 @@ metadata:
 spec:
   className: run.halo.app.content.PostContentThumbnailHandler
   extensionPointName: reactive-post-content-handler
-  displayName: "文章内容缩略图处理"
-  description: "处理文章的 HTML 内容为 img 标签追加缩略图"
-
+  displayName: "文章內容縮圖處理"
+  description: "處理文章的 HTML 內容，為 img 標籤追加縮圖"
 ---
 apiVersion: plugin.halo.run/v1alpha1
 kind: ExtensionDefinition
@@ -216,5 +239,5 @@ metadata:
 spec:
   className: run.halo.app.content.PageContentThumbnailHandler
   extensionPointName: reactive-page-content-handler
-  displayName: "自定义页面内容缩略图处理"
-  description: "处理页面的 HTML 内容为 img 标签追加缩略图"
+  displayName: "自定義頁面內容縮圖處理"
+  description: "處理頁面的 HTML 內容，為 img 標籤追加縮圖"

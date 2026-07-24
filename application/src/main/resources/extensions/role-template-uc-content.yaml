@@ -5,8 +5,8 @@ metadata:
   labels:
     rbac.authorization.halo.run/system-reserved: "true"
   annotations:
-    # Currently, yaml definition does not support i18n, please see https://github.com/halo-dev/halo/issues/3573
-    rbac.authorization.halo.run/display-name: "文章管理员"
+    # 目前 yaml 定義不支援 i18n，請參閱 https://github.com/halo-dev/halo/issues/3573
+    rbac.authorization.halo.run/display-name: "文章管理員"
     rbac.authorization.halo.run/dependencies: |
       ["role-template-manage-posts"]
 rules: []
@@ -19,7 +19,7 @@ metadata:
   labels:
     rbac.authorization.halo.run/system-reserved: "true"
   annotations:
-    # Currently, yaml definition does not support i18n, please see https://github.com/halo-dev/halo/issues/3573
+    # 目前 yaml 定義不支援 i18n，請參閱 https://github.com/halo-dev/halo/issues/3573
     rbac.authorization.halo.run/display-name: "作者"
     rbac.authorization.halo.run/disallow-access-console: "true"
     rbac.authorization.halo.run/redirect-on-login: "/uc"
@@ -35,9 +35,9 @@ metadata:
   labels:
     halo.run/role-template: "true"
   annotations:
-    rbac.authorization.halo.run/module: "Posts Management"
-    # Currently, yaml definition does not support i18n, please see https://github.com/halo-dev/halo/issues/3573
-    rbac.authorization.halo.run/display-name: "Post Author"
+    rbac.authorization.halo.run/module: "文章管理"
+    # 目前 yaml 定義不支援 i18n，請參閱 https://github.com/halo-dev/halo/issues/3573
+    rbac.authorization.halo.run/display-name: "文章作者模板"
     rbac.authorization.halo.run/dependencies: |
       [ "role-template-post-contributor", "role-template-post-publisher", "role-template-recycle-my-post",
         "role-template-uc-attachment-manager" ]
@@ -51,7 +51,7 @@ metadata:
   labels:
     rbac.authorization.halo.run/system-reserved: "true"
   annotations:
-    # Currently, yaml definition does not support i18n, please see https://github.com/halo-dev/halo/issues/3573
+    # 目前 yaml 定義不支援 i18n，請參閱 https://github.com/halo-dev/halo/issues/3573
     rbac.authorization.halo.run/display-name: "投稿者"
     rbac.authorization.halo.run/disallow-access-console: "true"
     rbac.authorization.halo.run/redirect-on-login: "/uc"
@@ -67,9 +67,9 @@ metadata:
   labels:
     halo.run/role-template: "true"
   annotations:
-    rbac.authorization.halo.run/module: "Posts Management"
-    # Currently, yaml definition does not support i18n, please see https://github.com/halo-dev/halo/issues/3573
-    rbac.authorization.halo.run/display-name: "Post Contributor"
+    rbac.authorization.halo.run/module: "文章管理"
+    # 目前 yaml 定義不支援 i18n，請參閱 https://github.com/halo-dev/halo/issues/3573
+    rbac.authorization.halo.run/display-name: "文章投稿者模板"
     rbac.authorization.halo.run/dependencies: |
       [ "role-template-view-categories", "role-template-view-tags" ]
     rbac.authorization.halo.run/ui-permissions: |
@@ -90,8 +90,8 @@ metadata:
   labels:
     halo.run/role-template: "true"
   annotations:
-    rbac.authorization.halo.run/module: "Posts Management"
-    rbac.authorization.halo.run/display-name: "Post Publisher"
+    rbac.authorization.halo.run/module: "文章管理"
+    rbac.authorization.halo.run/display-name: "文章發佈者模板"
     rbac.authorization.halo.run/ui-permissions: |
       [ "uc:posts:publish" ]
 rules:
@@ -108,8 +108,8 @@ metadata:
   labels:
     halo.run/role-template: "true"
   annotations:
-    rbac.authorization.halo.run/module: "Posts Management"
-    rbac.authorization.halo.run/display-name: "Recycle My Post"
+    rbac.authorization.halo.run/module: "文章管理"
+    rbac.authorization.halo.run/display-name: "回收我的文章模板"
     rbac.authorization.halo.run/ui-permissions: |
       [ "uc:posts:recycle" ]
 rules:
@@ -126,6 +126,6 @@ metadata:
   labels:
     halo.run/role-template: "true"
   annotations:
-    rbac.authorization.halo.run/module: "Posts Management"
-    rbac.authorization.halo.run/display-name: "Post Attachment Manager"
-rules: []
+    rbac.authorization.halo.run/module: "文章管理"
+    rbac.authorization.halo.run/display-name: "文章附件管理員模板"
+rules: [ ]

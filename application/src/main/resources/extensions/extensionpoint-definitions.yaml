@@ -1,5 +1,5 @@
-## TODO: Currently, Halo does not support i18n for configuration file descriptions
-## So Simplified Chinese is temporarily used as the default description language.
+## TODO: 目前 Halo 尚不支援配置檔案描述的多語言 (i18n)
+## 因此暫時將正體中文作為預設描述語言。
 
 apiVersion: plugin.halo.run/v1alpha1
 kind: ExtensionPointDefinition
@@ -7,9 +7,9 @@ metadata:
   name: additional-webfilter
 spec:
   className: run.halo.app.security.AdditionalWebFilter
-  displayName: "附加 Web 过滤器"
+  displayName: "附加 Web 篩選器"
   type: MULTI_INSTANCE
-  description: "用于 Web 请求的链式处理，可以用来实现跨领域、与应用无关的需求，如安全性、超时等"
+  description: "用於 Web 請求的鏈式處理，可用來實現跨領域、與應用無關的需求，如安全性、逾時等"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -18,9 +18,9 @@ metadata:
   name: reactive-post-content-handler
 spec:
   className: run.halo.app.theme.ReactivePostContentHandler
-  displayName: "文章内容处理器"
+  displayName: "文章內容處理器"
   type: MULTI_INSTANCE
-  description: "扩展在主题侧显示的文章内容"
+  description: "擴充在佈景主題端顯示的文章內容"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -29,9 +29,9 @@ metadata:
   name: reactive-singlepage-content-handler
 spec:
   className: run.halo.app.theme.ReactiveSinglePageContentHandler
-  displayName: "页面内容处理器"
+  displayName: "頁面內容處理器"
   type: MULTI_INSTANCE
-  description: "扩展在主题侧显示的页面内容"
+  description: "擴充在佈景主題端顯示的頁面內容"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -40,9 +40,9 @@ metadata:
   name: comment-widget
 spec:
   className: run.halo.app.theme.dialect.CommentWidget
-  displayName: "评论组件"
+  displayName: "評論元件"
   type: SINGLETON
-  description: "扩展在文章页面中显示的评论组件"
+  description: "擴充在文章頁面中顯示的評論元件"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -51,9 +51,9 @@ metadata:
   name: username-password-authentication-manager
 spec:
   className: run.halo.app.security.authentication.login.UsernamePasswordAuthenticationManager
-  displayName: "用户名密码认证管理器"
+  displayName: "使用者名稱密碼認證管理員"
   type: SINGLETON
-  description: "扩展用户名密码认证"
+  description: "擴充使用者名稱密碼認證功能"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -62,9 +62,9 @@ metadata:
   name: reactive-notifier
 spec:
   className: run.halo.app.notification.ReactiveNotifier
-  displayName: "消息通知器"
+  displayName: "訊息通知器"
   type: MULTI_INSTANCE
-  description: "扩展消息通知器，以向用户发送通知"
+  description: "擴充訊息通知器，用以向使用者發送通知"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -73,9 +73,9 @@ metadata:
   name: search-engine
 spec:
   className: run.halo.app.search.SearchEngine
-  displayName: "搜索引擎"
+  displayName: "搜尋引擎"
   type: SINGLETON
-  description: "扩展内容搜索引擎"
+  description: "擴充內容搜尋引擎"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -84,9 +84,9 @@ metadata:
   name: template-footer-processor
 spec:
   className: run.halo.app.theme.dialect.TemplateFooterProcessor
-  displayName: 页脚标签内容处理器
+  displayName: 頁尾標籤內容處理器
   type: MULTI_INSTANCE
-  description: "提供用于扩展 <halo:footer/> 标签内容的扩展方式。"
+  description: "提供用於擴充 <halo:footer/> 標籤內容的處理方式。"
 ---
 apiVersion: plugin.halo.run/v1alpha1
 kind: ExtensionPointDefinition
@@ -96,7 +96,7 @@ spec:
   className: run.halo.app.content.ExcerptGenerator
   displayName: 摘要生成器
   type: SINGLETON
-  description: "提供自动生成摘要的方式扩展，如使用算法提取或使用 AI 生成。"
+  description: "提供自動生成摘要的擴充方式，例如使用演算法提取或使用 AI 生成。"
 ---
 apiVersion: plugin.halo.run/v1alpha1
 kind: ExtensionPointDefinition
@@ -105,9 +105,9 @@ metadata:
   deletionTimestamp: 2026-09-07T00:00:00Z
 spec:
   className: run.halo.app.core.attachment.ThumbnailProvider
-  displayName: 图片缩略图生成
+  displayName: 圖片縮圖生成
   type: MULTI_INSTANCE
-  description: "提供生成图片缩略图的扩展方式"
+  description: "提供生成圖片縮圖的擴充方式"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -116,9 +116,9 @@ metadata:
   name: attachment-handler
 spec:
   className: run.halo.app.core.extension.attachment.endpoint.AttachmentHandler
-  displayName: "附件存储策略"
+  displayName: "附件儲存策略"
   type: MULTI_INSTANCE
-  description: "提供附件上传、删除和存储的扩展方式"
+  description: "提供附件上傳、刪除和儲存的擴充方式"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -127,9 +127,9 @@ metadata:
   name: comment-subject
 spec:
   className: run.halo.app.content.comment.CommentSubject
-  displayName: "评论主体"
+  displayName: "評論主體"
   type: MULTI_INSTANCE
-  description: "提供评论主体展示的扩展方式"
+  description: "提供評論主體展示的擴充方式"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -138,9 +138,9 @@ metadata:
   name: template-head-processor
 spec:
   className: run.halo.app.theme.dialect.TemplateHeadProcessor
-  displayName: "页头内容处理器"
+  displayName: "頁面 head 處理器"
   type: MULTI_INSTANCE
-  description: "提供用于扩展主题页面 <head> 标签内容的扩展方式"
+  description: "提供用於擴充佈景主題頁面 <head> 標籤內容的擴充方式"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -149,9 +149,9 @@ metadata:
   name: element-tag-post-processor
 spec:
   className: run.halo.app.theme.dialect.ElementTagPostProcessor
-  displayName: "元素标签后置处理器"
+  displayName: "元素標籤後置處理器"
   type: MULTI_INSTANCE
-  description: "提供用于对 Thymeleaf 元素标签进行后置处理的扩展方式"
+  description: "提供用於對 Thymeleaf 元素標籤進行後置處理的擴充方式"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -160,9 +160,9 @@ metadata:
   name: before-security-webfilter
 spec:
   className: run.halo.app.security.BeforeSecurityWebFilter
-  displayName: "Security 前置过滤器"
+  displayName: "Security 前置過濾器"
   type: MULTI_INSTANCE
-  description: "提供在 Security 过滤器链最前面执行的 Web 过滤器扩展方式"
+  description: "提供在 Security 過濾器鏈最前面執行的 Web 過濾器擴充方式"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -171,9 +171,9 @@ metadata:
   name: after-security-webfilter
 spec:
   className: run.halo.app.security.AfterSecurityWebFilter
-  displayName: "Security 后置过滤器"
+  displayName: "Security 後置過濾器"
   type: MULTI_INSTANCE
-  description: "提供在 Security 过滤器链最后面执行的 Web 过滤器扩展方式"
+  description: "提供在 Security 過濾器鏈最後面執行的 Web 過濾器擴充方式"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -182,9 +182,9 @@ metadata:
   name: http-basic-security-webfilter
 spec:
   className: run.halo.app.security.HttpBasicSecurityWebFilter
-  displayName: "HTTP Basic 认证过滤器"
+  displayName: "HTTP Basic 認證過濾器"
   type: MULTI_INSTANCE
-  description: "提供 HTTP Basic 认证逻辑的扩展方式"
+  description: "提供 HTTP Basic 認證邏輯的擴充方式"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -193,9 +193,9 @@ metadata:
   name: form-login-security-webfilter
 spec:
   className: run.halo.app.security.FormLoginSecurityWebFilter
-  displayName: "表单登录认证过滤器"
+  displayName: "表單登入認證過濾器"
   type: MULTI_INSTANCE
-  description: "提供表单登录认证逻辑的扩展方式"
+  description: "提供表單登入認證邏輯的擴充方式"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -204,9 +204,9 @@ metadata:
   name: authentication-security-webfilter
 spec:
   className: run.halo.app.security.AuthenticationSecurityWebFilter
-  displayName: "普通认证过滤器"
+  displayName: "一般認證過濾器"
   type: MULTI_INSTANCE
-  description: "提供普通认证逻辑的扩展方式"
+  description: "提供一般認證邏輯的擴充方式"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -215,9 +215,9 @@ metadata:
   name: anonymous-authentication-security-webfilter
 spec:
   className: run.halo.app.security.AnonymousAuthenticationSecurityWebFilter
-  displayName: "匿名认证过滤器"
+  displayName: "匿名認證過濾器"
   type: MULTI_INSTANCE
-  description: "提供匿名认证逻辑的扩展方式"
+  description: "提供匿名認證邏輯的擴充方式"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -226,9 +226,9 @@ metadata:
   name: oauth2-authorization-code-security-webfilter
 spec:
   className: run.halo.app.security.OAuth2AuthorizationCodeSecurityWebFilter
-  displayName: "OAuth2 授权码认证过滤器"
+  displayName: "OAuth2 授權碼認證過濾器"
   type: MULTI_INSTANCE
-  description: "提供 OAuth2 授权码认证逻辑的扩展方式"
+  description: "提供 OAuth2 授權碼認證邏輯的擴充方式"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -237,9 +237,9 @@ metadata:
   name: halo-documents-provider
 spec:
   className: run.halo.app.search.HaloDocumentsProvider
-  displayName: "搜索文档提供者"
+  displayName: "搜尋文件提供者"
   type: MULTI_INSTANCE
-  description: "提供用于重建搜索索引的文档数据"
+  description: "提供用於重建搜尋索引的文件資料"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -248,9 +248,9 @@ metadata:
   name: user-pre-creating-handler
 spec:
   className: run.halo.app.core.user.service.UserPreCreatingHandler
-  displayName: "用户创建前处理器"
+  displayName: "使用者建立前處理器"
   type: MULTI_INSTANCE
-  description: "提供在用户创建之前执行自定义逻辑的扩展方式"
+  description: "提供在使用者建立之前執行自訂邏輯的擴充方式"
 
 ---
 apiVersion: plugin.halo.run/v1alpha1
@@ -259,6 +259,6 @@ metadata:
   name: user-post-creating-handler
 spec:
   className: run.halo.app.core.user.service.UserPostCreatingHandler
-  displayName: "用户创建后处理器"
+  displayName: "使用者建立後處理器"
   type: MULTI_INSTANCE
-  description: "提供在用户创建之后执行自定义逻辑的扩展方式"
+  description: "提供在使用者建立之後執行自訂邏輯的擴充方式"

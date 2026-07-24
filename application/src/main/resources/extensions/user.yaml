@@ -7,7 +7,7 @@ metadata:
   finalizers:
     - system-protection
 spec:
-  displayName: Anonymous User
+  displayName: 匿名使用者
   email: anonymous@example.com
   disabled: true
 
@@ -21,7 +21,7 @@ metadata:
   finalizers:
     - system-protection
 spec:
-  displayName: 已删除用户
+  displayName: 已刪除使用者
   email: ghost@example.com
   disabled: true
-  bio: 该用户已被删除。
+  bio: 該使用者已被刪除。
