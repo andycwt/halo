@@ -16,7 +16,7 @@ COPY --from=builder /application/extracted/application/ ./
 ENV JVM_OPTS="" \
     HALO_WORK_DIR="/root/.halo2" \
     SPRING_CONFIG_LOCATION="optional:classpath:/;optional:file:/root/.halo2/" \
-    TZ=Asia/Shanghai
+    TZ=Asia/Taipei
 
 # --- BEGIN CVE-2026-91403 stopgap ---
 # The private keys of eight eMudhra emSign intermediate CA certificates are
