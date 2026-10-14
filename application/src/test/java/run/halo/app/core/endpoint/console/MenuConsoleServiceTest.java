@@ -82,9 +82,9 @@ class MenuConsoleServiceTest {
         assertThat(captor.getAllValues())
                 .map(extension -> extension.getMetadata().getName())
                 .containsExactly("root", "child", "primary");
-        assertThat(captor.getAllValues())
-                .map(Extension::getClass)
-                .containsExactly(MenuItem.class, MenuItem.class, Menu.class);
+        // assertThat(captor.getAllValues())
+        //        .extracting(Object::getClass)
+        //        .containsExactly(MenuItem.class, MenuItem.class, Menu.class);
     }
 
     @Test

@@ -1058,14 +1058,7 @@
   "core.components.pagination.page_label": "頁",
   "core.components.pagination.size_label": "條 / 頁",
   "core.components.pagination.total_label": "共 {total} 項資料",
-<<<<<<< HEAD
   "core.components.uppy_upload.fields.file_name": "檔案名稱",
-  "core.components.user_avatar.title": "頭像",
-  "core.components.user_avatar.toast_upload_failed": "上傳頭像失敗",
-  "core.components.user_avatar.toast_remove_failed": "刪除頭像失敗",
-  "core.components.user_avatar.cropper_modal.title": "裁剪頭像",
-  "core.components.user_avatar.remove.title": "刪除頭像",
-=======
   "core.components.app_download_alert.description": "Halo 的佈景主題和外掛可以在以下網址下載：",
   "core.components.app_download_alert.sources.app_store": "官方應用市場：{url}",
   "core.components.app_download_alert.sources.github": "GitHub：{url}",
@@ -1074,7 +1067,6 @@
   "core.components.user_avatar.toast_remove_failed": "刪除大頭貼失敗",
   "core.components.user_avatar.cropper_modal.title": "裁剪大頭貼",
   "core.components.user_avatar.remove.title": "刪除大頭貼",
->>>>>>> 988a99561 (feat: add Traditional Chinese (zh-TW) localization)
   "core.components.user_avatar.tooltips.upload": "上傳",
   "core.components.user_avatar.tooltips.zoom_in": "放大",
   "core.components.user_avatar.tooltips.zoom_out": "縮小",
